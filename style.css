@@ -198,7 +198,7 @@ section {
 }
 .publication-block {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 1.8rem;
     padding: 1rem 0;
 }
@@ -225,6 +225,56 @@ hr {
     height: 1px;
     background-color: var(--line);
     margin: 1rem 0;
+}
+
+/* Publication Technical Tags */
+.publication-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.65rem;
+}
+
+.publication-tags span {
+    display: inline-block;
+    background-color: #f0f4f8;
+    color: var(--blue-dark);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Expandable Publication Details */
+.publication-expand {
+    margin-top: 0.45rem;
+}
+
+.publication-expand summary {
+    color: var(--blue-dark);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    padding: 0.2rem 0;
+}
+
+.publication-expand summary:hover {
+    text-decoration: underline;
+}
+
+.publication-expand[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+.publication-expand p {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 0.7rem;
 }
 
 @media (max-width: 760px) {
